@@ -8,7 +8,10 @@ public class Spearman extends ClassInfantery {
 
     @Override
     public String toString() {
-        return "Spearman: " + super.toString() + ".";
+        String unit = this.getClass().getSimpleName();
+        if (this.hp <= 0)
+            return unit + " is die.";
+        return unit + ": " + super.toString() + ".";
     }
 
     public void attack(ClassUnit target) {

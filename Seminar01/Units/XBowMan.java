@@ -1,6 +1,6 @@
 package Units;
 
-public class XBowMan extends ClassSooter {
+public class XBowMan extends ClassShooter {
 
     public XBowMan() {
         super(50, 6, 12, 56);
@@ -8,10 +8,10 @@ public class XBowMan extends ClassSooter {
 
     @Override
     public String toString() {
-        if (this.hp <= 0) {
-            return this.getClass().getSimpleName() + " is die.";
-        }
-        return "XBowMan: " + super.toString() + ".";
+        String unit = this.getClass().getSimpleName();
+        if (this.hp <= 0)
+            return unit + " is die.";
+        return unit + ": " + super.toString() + ".";
     }
 
     public void attack(ClassUnit target) {

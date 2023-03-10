@@ -1,10 +1,10 @@
 package Units;
 
-public class ClassSooter extends ClassUnit {
+public class ClassShooter extends ClassUnit {
 
     protected int arrows;
 
-    public ClassSooter(float hp, int speed, int damage, int arrows) {
+    public ClassShooter(float hp, int speed, int damage, int arrows) {
         super(hp, speed, damage);
         this.arrows = arrows;
     }

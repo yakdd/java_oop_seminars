@@ -1,12 +1,12 @@
 Unit (abstract class)
-    PlebeiusClass (super class)
+    ClassPlebeius (super class)
         Peasant     - Крестьянин
-    SooterClass (super class) [стрелы]
+    ClassShooter (super class) [стрелы]
         Sniper      - Снайпер
         XBowMan     - Арбалетчик
-    MagicianClass (super class) [магия]
+    ClassMagician (super class) [магия]
         Wizard      - Колдун
         Monk        - Монах
-    InfanteryClass (super class) [оружие]
+    ClassInfantery (super class) [оружие]
         Robber      - Разбойник
         Spearman    - Копейщик
