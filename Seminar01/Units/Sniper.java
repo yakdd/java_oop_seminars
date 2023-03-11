@@ -8,10 +8,9 @@ public class Sniper extends ClassShooter {
 
     @Override
     public String toString() {
-        String unit = this.getClass().getSimpleName();
         if (this.hp <= 0)
-            return unit + " is die.";
-        return unit + ": " + super.toString() + ".";
+            return "Sniper is die.";
+        return "Sniper: " + super.toString() + ".";
     }
 
     public void attack(ClassUnit target) {
